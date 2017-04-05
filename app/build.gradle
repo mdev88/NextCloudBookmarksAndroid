@@ -1,0 +1,26 @@
+apply plugin: 'com.android.application'
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+}
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+    defaultConfig {
+        applicationId 'com.tttdevs.ncbookmarks'
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionName '1.0'
+        versionCode 1
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    aaptOptions {
+        ignoreAssetsPattern 'node_modules:bower_components:.*'
+    }
+}

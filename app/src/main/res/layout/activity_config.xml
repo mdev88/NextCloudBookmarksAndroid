@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/txtEnterUrl"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Enter your NextCloud server full URL" />
+
+    <EditText
+        android:id="@+id/edtUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtEnterUrl"
+        android:ems="10"
+        android:hint="https://yourserver.com"
+        android:inputType="textWebEditText" >
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnSaveUrl"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Instructions"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_below="@+id/btnSaveUrl"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Once you set your server's URL, you will be able to call this app via the &quot;Share&quot; option from other apps.\n\nThe first time you do so, you will be prompted to log in, and the credentials will be remembered within this app until you log out.\n\nYou can change (or correct) the NextCloud URL at any time by opening this app from the launcher icon."
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edtUrl"
+        android:text="Please double check the URL before saving."
+        android:textStyle="italic" />
+
+    <ImageView
+        android:onClick="aboutTTT"
+        android:id="@+id/imgAboutTTT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/solottt_sm"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/btnSaveUrl"
+        android:layout_alignStart="@+id/btnSaveUrl" />
+
+
+</RelativeLayout>
