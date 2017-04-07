@@ -1,4 +1,4 @@
-package com.tttdevs.ncbookmarks;
+package com.tttdevs.stncbookmarks;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

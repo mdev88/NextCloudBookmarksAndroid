@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="Enter your NextCloud server full URL" />
+        android:text="Enter your Nextcloud server full URL" />
 
     <EditText
         android:id="@+id/edtUrl"
@@ -57,7 +57,7 @@
         android:paddingRight="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Once you set your server's URL, you will be able to call this app via the &quot;Share&quot; option from other apps.\n\nThe first time you do so, you will be prompted to log in, and the credentials will be remembered within this app until you log out.\n\nYou can change (or correct) the NextCloud URL at any time by opening this app from the launcher icon."
+        android:text="Once you set your server's URL, you will be able to call this app via the &quot;Share&quot; option from other apps.\n\nThe first time you do so, you will be prompted to log in, and the credentials will be remembered within this app until you log out.\n\nYou can change (or correct) the Nextcloud URL at any time by opening this app from the launcher icon."
         android:layout_below="@+id/textView3"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -78,9 +78,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/solottt_sm"
+        android:layout_marginBottom="10dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/btnSaveUrl"
-        android:layout_alignStart="@+id/btnSaveUrl" />
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

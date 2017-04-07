@@ -9,15 +9,16 @@
 
     <ImageView
         android:id="@+id/imgNextCloud"
-        android:padding="5dp"
-        android:layout_margin="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:scaleType="centerInside"
-        android:src="@drawable/logo_nextcloud"
-        android:visibility="visible" />
+        android:padding="5dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/web_hi_res_512"
+        android:visibility="visible"
+        android:layout_margin="50dp"
+
+        android:layout_above="@+id/txtLoading" />
 
     <WebView
         android:id="@+id/webview"
@@ -30,10 +31,10 @@
         android:paddingTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imgNextCloud"
-        android:layout_centerHorizontal="true"
-        android:text="Contacting NextCloud, please wait..."
-        android:textAppearance="@android:style/TextAppearance.Medium" />
+        android:text="Contacting Nextcloud, please wait..."
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:layout_above="@+id/txtTTT"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:id="@+id/txtTTT"
@@ -41,6 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
         android:paddingBottom="20dp"
         android:text="By TTTDevs" />
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tttdevs.ncbookmarks"
+    package="com.tttdevs.stncbookmarks"
     android:installLocation="auto">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -13,7 +13,7 @@
         >
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.tttdevs.stncbookmarks.MainActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:theme="@style/Theme.AppCompat.NoActionBar"
             android:launchMode="singleInstance">
@@ -24,7 +24,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ConfigActivity"
+        <activity android:name="com.tttdevs.stncbookmarks.ConfigActivity"
             android:launchMode="singleInstance">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
