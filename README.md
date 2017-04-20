@@ -11,7 +11,7 @@ This is an unofficial Open-Source NextCloud app that allows users of the Bookmar
 <img src="https://raw.githubusercontent.com/TTTDevs/NextCloudBookmarksAndroid/master/img/2.png" width="360">
 <img src="https://raw.githubusercontent.com/TTTDevs/NextCloudBookmarksAndroid/master/img/3.png" width="360">
 <img src="https://raw.githubusercontent.com/TTTDevs/NextCloudBookmarksAndroid/master/img/4.png" width="360">
-<img src="https://raw.githubusercontent.com/TTTDevs/NextCloudBookmarksAndroid/master/img/.png" width="360">
+<img src="https://raw.githubusercontent.com/TTTDevs/NextCloudBookmarksAndroid/master/img/5.png" width="360">
 
 
 ### Instructions
