@@ -37,43 +37,43 @@ public class MainActivity extends AppCompatActivity {
         webView.setWebViewClient(new WebViewClient() {
             @Override
             public void onReceivedSslError (WebView view, final SslErrorHandler handler, SslError error) {
-//                Toast.makeText(MainActivity.this, "Warning: Website uses self-signed certificate", Toast.LENGTH_LONG).show();
-//                handler.proceed();
+                Toast.makeText(MainActivity.this, "Warning: Website uses self-signed certificate", Toast.LENGTH_LONG).show();
+                handler.proceed();
 
-                final AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-                String message = "SSL Certificate error.";
-                switch (error.getPrimaryError()) {
-                    case SslError.SSL_UNTRUSTED:
-                        message = "The certificate authority is not trusted.";
-                        break;
-                    case SslError.SSL_EXPIRED:
-                        message = "The certificate has expired.";
-                        break;
-                    case SslError.SSL_IDMISMATCH:
-                        message = "The certificate Hostname mismatch.";
-                        break;
-                    case SslError.SSL_NOTYETVALID:
-                        message = "The certificate is not yet valid.";
-                        break;
-                }
-                message += " Do you want to continue anyway?";
-
-                builder.setTitle("SSL Certificate Error");
-                builder.setMessage(message);
-                builder.setPositiveButton("continue", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        handler.proceed();
-                    }
-                });
-                builder.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        handler.cancel();
-                    }
-                });
-                final AlertDialog dialog = builder.create();
-                dialog.show();
+//                final AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+//                String message = "SSL Certificate error.";
+//                switch (error.getPrimaryError()) {
+//                    case SslError.SSL_UNTRUSTED:
+//                        message = "The certificate authority is not trusted.";
+//                        break;
+//                    case SslError.SSL_EXPIRED:
+//                        message = "The certificate has expired.";
+//                        break;
+//                    case SslError.SSL_IDMISMATCH:
+//                        message = "The certificate Hostname mismatch.";
+//                        break;
+//                    case SslError.SSL_NOTYETVALID:
+//                        message = "The certificate is not yet valid.";
+//                        break;
+//                }
+//                message += " Do you want to continue anyway?";
+//
+//                builder.setTitle("SSL Certificate Error");
+//                builder.setMessage(message);
+//                builder.setPositiveButton("continue", new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialog, int which) {
+//                        handler.proceed();
+//                    }
+//                });
+//                builder.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialog, int which) {
+//                        handler.cancel();
+//                    }
+//                });
+//                final AlertDialog dialog = builder.create();
+//                dialog.show();
             }});
 
         webView.setWebChromeClient(new WebChromeClient() {
