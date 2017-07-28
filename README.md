@@ -1,12 +1,16 @@
 ![Featured image](https://raw.githubusercontent.com/TTTDevs/NextCloudBookmarksAndroid/master/img/Featured.png "Save to Nextcloud Bookmarks")
 
 Save to Nextcloud Bookmarks (Android)
-===============
+=====================================
 
 This is an unofficial Open-Source NextCloud app that allows users of the Bookmarks NextCloud app to easily save links into their personal cloud.
 
-### Screenshots
+<a href="https://f-droid.org/packages/com.tttdevs.stncbookmarks/" target="_blank">
+<img src="https://f-droid.org/badge/get-it-on.png" alt="Get it on F-Droid" height="100"/></a>
+<a href="https://play.google.com/store/apps/details?id=com.tttdevs.stncbookmarks" target="_blank">
+<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" alt="Get it on Google Play" height="100"/></a>
 
+### Screenshots
 <img src="https://raw.githubusercontent.com/TTTDevs/NextCloudBookmarksAndroid/master/img/1.png" width="360">
 <img src="https://raw.githubusercontent.com/TTTDevs/NextCloudBookmarksAndroid/master/img/2.png" width="360">
 <img src="https://raw.githubusercontent.com/TTTDevs/NextCloudBookmarksAndroid/master/img/3.png" width="360">
